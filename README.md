@@ -43,7 +43,8 @@ Each toolbox uses APIs.yaml as the index for all the APIs included in the toolbo
 ### Toolbox Details
 These are the properties that describe the toolbox, providing the name, description, and other details needed to understand what is happening with this API toolbox. Providing the following properties that can be defined when creating a new toolbox, and maintaining over time.
 
-```name: Postman COVID-19 API Resource Center
+```
+  name: Postman COVID-19 API Resource Center
   description: During the present novel coronavirus (COVID-19) pandemic, those on the front lines—including health care professionals, researchers, and government experts—need quick, easy access to real-time critical data. This type of information exchange is what APIs do best, and as an API-first company, Postman is committed to providing whatever assistance we can in this area.
   image: assets/images/covid-19.png
   tags:
@@ -54,16 +55,19 @@ These are the properties that describe the toolbox, providing the name, descript
   url: apis.json
   specificationVersion: '0.14'
   apis:
+
 ```
 
 ### APIs Details
 The Toolbox can contain many different APIs, each defined using the APIs object, providing all of the details needed understand each individual API, and the properties of the APIs, providing human and machine readable details about how to put it to use in applications.
 
-```- name: COVID-19 Rich Data Services
+```
+  - name: COVID-19 Rich Data Services
     description: The COVID-19 Rich Data Services API from MTNA offers curated, high-quality data and metadata from official and popular Coronavirus datasets from around the world. The catalog is updated daily and is constantly growing.
     tags:
     - Cases
     properties:
+
 ```
 
 ### API Properties
@@ -71,36 +75,46 @@ Each API can have a variety of properties that describe not just the API, but al
 
 ### Postman Documentation
 
+```
   - type: x-postman-documentation
     url: https://documenter.getpostman.com/view/2220438/SzYevv9u?version=latest
+```    
 
 ### Run in Postman Button
 
+```
   - type: x-run-in-postman
     url: https://app.getpostman.com/run-collection/2220438-d3ac9594-1c67-4176-b103-0c8238ad7aba-SzYevv9u
+```
 
 ### Postman Visualizer
 
+```
   - type: x-postman-visualizer
     x-data:
       thumbnail: https://postman-toolboxes2.s3.amazonaws.com/collections/covid-19-rich-data-service/Visualize+COVID-19+cases+over+time+in+the+U.S..png
       title: Visualize COVID-19 cases over time in the U.S.
       url: https://documenter.getpostman.com/view/2220438/SzYevv9u?version=latest#7310d8a6-43a0-4e44-9313-4639f57e1b38
+```
 
 ### Rating
 
+```
   - type: x-rating
     x-data:
       rating: 9
+```
 
 ### Sources
 
+```
   - type: x-sources
     url: https://covid19.richdataservices.com/rds-explorer/data-product-selection
     x-data:
       sources:
         - name: The COVID Tracking Project
           url: https://covidtracking.com/data
+```
 
 Think of the APIs.yaml as the database for the single page application, and the rest of the site files are about rendering that data as the single page application providing an API resources center that can help developers build applications.
 
